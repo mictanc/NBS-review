@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBS - Submit Your Review</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Leave a Review for NBS (Natural Beauty Salon)</h1>
+        
+        <form id="review-form">
+            <label for="name">Name (optional):</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+
+            <label for="rating">Rating (1-5):</label>
+            <select id="rating" name="rating">
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" rows="4" placeholder="Write your review here..."></textarea>
+
+            <label for="date">Date of Visit:</label>
+            <input type="date" id="date" name="date">
+
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="review-message"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
